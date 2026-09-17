@@ -1,0 +1,221 @@
+/* LOGIN PAGE */
+.login-page {
+  min-height: 100vh;
+  background: #eef2f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 40px rgba(26,58,110,0.13);
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+
+.login-card-top {
+  height: 5px;
+  background: linear-gradient(90deg, #1a3a6e, #2d6cdf, #4a90e2);
+}
+
+.login-card-body { padding: 40px 36px; }
+
+.login-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
+.login-logo-icon {
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, #1a3a6e 0%, #2d6cdf 100%);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 16px rgba(45,108,223,0.3);
+}
+
+.login-brand {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1a3a6e;
+  letter-spacing: 2px;
+}
+.login-tagline {
+  font-size: 11px;
+  color: #64748b;
+  text-align: center;
+  letter-spacing: 0.3px;
+  max-width: 260px;
+}
+
+.login-welcome {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.login-welcome h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+.login-welcome p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.btn-google {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 20px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 20px;
+}
+.btn-google:hover {
+  background: #f8fafc;
+  border-color: #2d6cdf;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.google-icon {
+  width: 20px; height: 20px;
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
+}
+.login-divider span {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.login-input-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+.login-input-icon {
+  position: absolute;
+  left: 12px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #94a3b8;
+  pointer-events: none;
+}
+.login-input {
+  width: 100%;
+  padding: 11px 14px 11px 38px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e293b;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+}
+.login-input:focus {
+  outline: none;
+  border-color: #2d6cdf;
+  box-shadow: 0 0 0 3px rgba(45,108,223,0.1);
+}
+.login-input::placeholder { color: #cbd5e1; }
+
+.login-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.btn-signin {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #1a3a6e 0%, #2d6cdf 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+.btn-signin:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(45,108,223,0.4);
+}
+.btn-signin:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.login-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+.login-footer a {
+  color: #2d6cdf;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+.login-footer a:hover { text-decoration: underline; }
+.login-footer .separator {
+  color: #cbd5e1;
+  margin: 0 8px;
+}
+.login-footer p { font-size: 13px; color: #64748b; margin-top: 8px; }
+
+.login-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid #ef4444;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.login-google-note {
+  background: #fef9c3;
+  color: #854d0e;
+  border-left: 4px solid #f59e0b;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
